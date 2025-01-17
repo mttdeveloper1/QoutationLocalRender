@@ -71,7 +71,7 @@ app.use('/api/branch',BranchRoute);//
 
 
 //start server
-const port = 3000;
+const port = 5000;
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
 });
