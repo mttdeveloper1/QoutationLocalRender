@@ -9,6 +9,11 @@ QuotationModel.init({
         primaryKey: true,
         autoIncrement: true
     },
+    SrNo: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        unique:true,
+    },
     modelnames: {
         type: DataTypes.STRING(100),
         allowNull: true,
@@ -24,6 +29,7 @@ QuotationModel.init({
     fuel: {
         type: DataTypes.STRING(100),
         allowNull: true,
+        ENUM: ['Petrol', 'Diesel', 'CNG', 'Electric']
     },
     variantname: {
         type: DataTypes.STRING(100),
@@ -134,10 +140,10 @@ QuotationModel.init({
         type: DataTypes.TEXT,
         allowNull: true,
     },
-    billing_price:{
-        type: DataTypes.BIGINT,
-        allowNull: true
-    },
+    // billing_price:{
+    //     type: DataTypes.BIGINT,
+    //     allowNull: true
+    // },
     // // // // // key_replacement:{
     // // // // //     type: DataTypes.STRING(100),
     // // // // //     allowNull: true
@@ -197,7 +203,33 @@ QuotationModel.init({
     finalDealAmount:{
         type:DataTypes.BIGINT,
         allowNull:true
-    }
+    },
+    Date: {
+        type: DataTypes.DATE, 
+        allowNull: false,     
+      },
+      
+    //   consumer: {
+    //     type: DataTypes.STRING(100),
+    //     allowNull: true,
+    // },
+    // intervention: {
+    //     type: DataTypes.STRING(100),
+    //     allowNull: true,
+    // },
+    // green_bonus: {
+    //     type: DataTypes.STRING(100),
+    //     allowNull: true,
+    // },
+    // corporate: {
+    //     type: DataTypes.STRING(100),
+    //     allowNull: true,
+    // },
+    // solar: {
+    //     type: DataTypes.STRING(100),
+    //     allowNull: true,
+    // }
+
 },{
 
     sequelize,
