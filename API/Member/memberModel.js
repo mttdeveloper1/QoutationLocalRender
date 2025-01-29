@@ -37,6 +37,8 @@ Member.init({
     role:{
       type:DataTypes.STRING(100),
       allowNull:true,
+      enum:['Owner','Branch Owner',' Dealer','user'],
+      defaultValue:'user'
     },
     profile:{
       type:DataTypes.STRING(100),

@@ -20,7 +20,7 @@ exports.Create = async (req, resp) => {
         }
         const addQuotation = await QuotationModel.create(req.body);
         if (addQuotation) {
-            return resp.status(200).json(req.body);
+            return resp.status(200).json(addQuotation);
         } else {
             return resp.status(400).json("form data  Formate is not valid  ")
         }

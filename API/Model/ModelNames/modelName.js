@@ -14,10 +14,10 @@ Modelname.init({
     primaryKey: true,
     autoIncrement: true
   },
-  ppl: {
-    type: DataTypes.STRING(100),
-    allowNull: true,
-  },
+  // ppl: {
+  //   type: DataTypes.STRING(100),
+  //   allowNull: true,
+  // },
   fuel_type:{
     type:DataTypes.STRING(100),
     allowNull:true
@@ -51,14 +51,14 @@ Modelname.init({
     type:DataTypes.STRING(100),
     allowNull:true
   },
-  quantity: {
-    type: DataTypes.BIGINT,
-    allowNull: true
-  },
-  additional: {
-    type: DataTypes.BIGINT,
-    allowNull: true
-  },
+  // quantity: {
+  //   type: DataTypes.BIGINT,
+  //   allowNull: true
+  // },
+  // additional: {
+  //   type: DataTypes.BIGINT,
+  //   allowNull: true
+  // },
   Insurance_Id: {
     type: DataTypes.INTEGER,
     allowNull: true
@@ -87,11 +87,11 @@ Modelname.init({
     type: DataTypes.STRING(100),
     allowNull: true
   },
-  RT_BH:{
+  RTO_BH:{
     type:DataTypes.STRING(100),
     allowNull:true
   },
-  RT_TRC:{
+  RTO_TRC:{
     type:DataTypes.STRING(100),
     allowNull:true
   },

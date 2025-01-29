@@ -9,11 +9,11 @@ QuotationModel.init({
         primaryKey: true,
         autoIncrement: true
     },
-    SrNo: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        unique:true,
-    },
+    // SrNo: {
+    //     type: DataTypes.INTEGER ,
+    //     allowNull: false,
+    //     unique:true,
+    // },
     modelnames: {
         type: DataTypes.STRING(100),
         allowNull: true,
