@@ -15,15 +15,15 @@ const sequelize = new Sequelize(
     port: process.env.DB_PORT || 3306,
 
   pool: {
-    max: 10, // Maximum number of connections in pool
-    min: 0, // Minimum number of connections in pool
-    acquire: 30000, // Maximum time (in ms) to try to get connection
-    idle: 10000, // Time (in ms) before releasing idle connection
+    max: 10, 
+    min: 0, 
+    acquire: 30000, 
+    idle: 10000, 
   },
-  logging: false, // Set to true to log SQL queries
+  logging: false, 
   dialectOptions: {
-    timezone: "+05:30", // Set timezone
-    charset: "utf8mb4", // Set character set
+    timezone: "+05:30", 
+    charset: "utf8mb4", 
   },
 });
 
